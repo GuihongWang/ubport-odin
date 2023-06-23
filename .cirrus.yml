@@ -6,13 +6,6 @@ task:
       cpu: 8  
       memory: 32G 
     mkdir: 
-      - cd && mkdir -p /build/bin && mkdir -p /build/sources && echo export PATH=\$PATH:\/build/bin >> /root/.bashrc
-    pkgupdate: 
-      - apt-get update && dpkg --add-architecture i386 && apt update 
-    bin: 
-      - cd && mkdir -p ~/bin && echo export PATH=\$PATH:\$HOME/bin >> ~/.bashrc && source ~/.bashrc
-    repo:
-      - curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+rx ~/bin/repo
-    
+      - cd
 
       
