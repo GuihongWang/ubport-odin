@@ -2,7 +2,7 @@ task:
     name: ubport
     timeout_in: 120m 
     container:
-      image: ubuntu:20.04
+      image: ubports:build-essential
       cpu: 8  
       memory: 32G 
     mkdir: 
